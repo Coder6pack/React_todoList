@@ -18,11 +18,13 @@ function TodoList() {
     let updateTodo = todos.map((todo) => {
       if (todo.id !== id) {
         todo.isComplete = !todo.isComplete;
+        console.log(todo.isComplete);
       }
       return todo;
     });
 
     setTodos(updateTodo);
+    console.log(updateTodo);
   };
   return (
     <div>
